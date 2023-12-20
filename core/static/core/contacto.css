@@ -1,0 +1,152 @@
+/*SECCION 1 FORMULARIO*/
+.contacto {
+    background-color: var(--color_base);
+}
+
+/* SECCION 1--Estilos del texto principal */
+.s1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto-contacto {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.texto-contacto .tittle {
+    font-size: 40px;
+    color: var(--color_prinipal);
+    font-weight: 800;
+}
+
+.p-contacto {
+    color: #404040;
+}
+
+.button_wathsapp input {
+    height: 50px;
+}
+
+/*FIN  Estilos del texto principal */
+
+/* SECCION 1--Estilos del Formulario */
+
+.conteiner {
+    max-width: 700px;
+    background: linear-gradient(130deg, lightblue, rgb(26, 26, 158));
+    padding: 25px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.conteiner .tittle {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--color_base);
+}
+
+.conteiner form {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 12px 0;
+}
+
+form .form-items {
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.form-items span {
+    display: block;
+    font-size: 15px;
+    font-weight: 200;
+    color: var(--color_base);
+    font-weight: 400px;
+
+}
+
+.form-items input,
+textarea {
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--color_prinipal);
+    border-bottom-width: 2px;
+    margin-top: 5px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+small {
+    display: none;
+}
+
+.form-items input,
+textarea:focus,
+.form-items input,
+textarea:valid {
+    border-color: rgb(34, 53, 255);
+}
+
+form .button,
+.button_wathsapp {
+    height: 40px;
+    margin: 20px 0;
+}
+
+form .button input,
+.button_wathsapp input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(130deg, lightblue, rgb(26, 26, 158));
+    color: var(--color_base);
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 25px;
+}
+
+form .button input:hover,
+.button_wathsapp input:hover {
+    background: linear-gradient(130deg, rgb(26, 26, 158), lightblue);
+}
+
+.was-validated small {
+    display: block;
+    color: red;
+}
+
+/* fin estilos del formulario */
+
+/*--------------------------------*/
+
+/* SECCION 2--Estilos del Mapa */
+
+.s2 {
+    align-items: center;
+    align-content: center;
+    height: 60vh;
+    width: 100vw;
+    background-color: var(--color_base);
+}
+.s2 iframe {
+    width: 100%;
+    height: 100%;
+}
+/*--------------------------------*/
+/* SECCION 3--info */
+
+

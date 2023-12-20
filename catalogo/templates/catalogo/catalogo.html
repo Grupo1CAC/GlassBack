@@ -1,0 +1,191 @@
+
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+        <section class="hero" style= "background-image: url('{% static 'core/imagenes/trabajador-construccion.jpg' %}')">  
+
+            <div class="hero-tittle">
+                <h1>Fabriccio Glass</h1>
+                <p>Mamparas de Vidrio</p>
+            </div>
+        </section>
+        
+        <div class="categorias">
+            <div class="titulo-categoria">
+                <h2 id="corredizas">Mamparas Corredizas</h2>
+            </div>
+            {% for categoria in categorias_1 %}
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="{{categoria.imagen.url}}" alt="">
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h2>{{categoria.titulo}}</h2>
+                            <p>{{categoria.descripcion}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>    
+        <div class="categorias">
+            <div class="titulo-categoria">
+                <h2 id="escaleras">Mamparas para Escaleras</h2>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="{% static 'core/imagenes/escalera-madera.jpg' %}" alt="Producto 1">
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto 1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="{% static 'core/imagenes/escalera-2.jpg' %}" alt="Producto 1">
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto 1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="{% static 'core/imagenes/escalera-3.jpg' %}" alt="Producto 1">
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto 1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="{% static 'core/imagenes/escalera-4.jpg' %}" alt="Producto 1">
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto 1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="{% static 'core/imagenes/corredizas-2.jpg' %}" alt="Producto 1">
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto 1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="{% static 'core/imagenes/escalera-2.jpg' %}" alt="Producto 1">
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto 1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="titulo-categoria">
+            <h2 id="balcones"> Mamparas para Balcones</h2>
+        </div>
+        <div class="categorias">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="{% static 'core/imagenes/corredizas.jpg' %}" alt="Producto 1">
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto 1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="{% static 'core/imagenes/corredizas-2.jpg' %}" alt="Producto 1">
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto 1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="{% static 'core/imagenes/box-corredizas-3.jpeg' %}" alt="Producto 1">
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto 1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <div class="s3">
+                    <div class="conteiner-info">
+                        <div class="info-items">
+                            <div class="social">
+                                <a href="{% static 'contacto.html' %}" target="_blank"><i class="fa-solid fa-file-invoice-dollar"></i></a></div>
+                                <h3>PRESUPUESTOS SIN CARGO</h3>
+                                <p>Cada trabajo a medida y con las mejores recomendaciones.</p>
+                            </div>
+                        <div class="info-items">
+                            <div class="social">
+                                <a href="{% static 'catalogo.html' %}" target="_blank">
+                                    <i class="fa-regular fa-map"></i>
+                                </a>
+                            </div>
+                            <h3>Zonas de trabajo</h3>
+                            <p>Por Aqui y Por alla</p>
+                        </div>
+                        <div class="info-items">
+                            <div class="social">
+                                <a href="{% static 'contacto.html' %}" target="_blank">
+                                    <i class="fa-solid fa-handshake"></i>
+                                </a>
+                            </div>
+                            <h3>TRABAJOS REALIZADOS</h3>
+                            <p>Compromiso y detalle con cada cliete</p>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}

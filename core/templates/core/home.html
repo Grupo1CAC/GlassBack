@@ -1,0 +1,98 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="hero" style= "background-image: url('{% static 'core/imagenes/balcon-barandas-cristal.jpg' %}')">  
+  <div class="hero-tittle">
+    <h1>Fabriccio Glass</h1>
+    <p>Mamparas de Vidrio</p>
+  </div>
+  <div class="link" >
+    <div class="social">
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a> 
+    </div>
+  </div>
+</div>
+<section class="nosotros">
+  <div class="nosotros-info">
+    <h2>Nosotros</h2>
+      <p>Somos una empresa dedicada a la elaboración e instalación de mamparas en cristal templado.</p>
+      <p>Desde 2010 brindando diseños elegantes y exclusivos para nuestros clientes. Toda nuestra experiencia al servicio en cada proyecto. Los productos FabriccioGlass presentan un standard de calidad acorde a las necesidades de un público muy exigente.</p>
+      <div class="s3">
+        <div class="conteiner-info">
+          <div class="info-items">
+            <div class="social">
+              <a href="{% url 'contacto' %}"target="_blank">
+                <i class="fa-solid fa-file-invoice-dollar"></i></a>
+              </div>
+              <h3>PRESUPUESTOS SIN CARGO</h3>
+              <p>Cada trabajo a medida y con las mejores recomendaciones.</p>
+          </div>
+          <div class="info-items">
+            <div class="social">
+              <a  href="{% url 'nosotros'%}"target="_blank">
+                <i class="fa-regular fa-map"></i></a>
+            </div>
+              <h3>Zonas de trabajo</h3>
+              <p>Por Aqui y Por alla</p>
+          </div>
+          <div class="info-items">
+            <div class="social">
+              <a href="{% url 'nosotros'%}" target="_blank">
+                <i class="fa-solid fa-handshake"></i>
+              </a>
+            </div>
+              <h3>TRABAJOS REALIZADOS</h3>
+              <p>Compromiso y detalle con cada cliete</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<section class="catalogo">
+    <div class="bloque-categoria">
+      <div class="texto-catalogo">
+        <h3>Categoría 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, voluptatum. Sequi dolorem quae iusto optio hic exercitationem ipsum eos magnam!</p>
+          <div class="span-categoria">
+            <a href= '{% url "catalogo" %}' target="_blank"><span>Ver más</span></a>
+          </div>
+      </div>
+      <div class="img-catalogo">
+        <img src= "{% static 'core/imagenes/escalera-madera.jpg' %}" class="scalera">
+      </div>
+    <div class="bloque-categoria">
+      <div class="img-catalogo">
+        <img src="{% static 'core/imagenes/escalera-madera.jpg' %}" alt="portada-mamparas-escaleras">
+      </div>
+      <div class="texto-catalogo">
+        <h3>Categoría 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere vel aperiam harum deleniti dolorum, dolorem aut cupiditate sapiente in!</p>
+        <div class="span-categoria">
+          <a href="{% static 'catalogo.html' %}" target="_blank"><span>Ver más</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="bloque-categoria">
+      <div class="texto-catalogo">
+        <h3>Categoría 3</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus provident nesciunt corporis doloribus ut minus earum in laborum perferendis dolorem.</p>
+        <div class="span-categoria">
+          <a href="{% static 'catalogo.html' %}" target="_blank"><span>Ver más</span></a>
+        </div>
+      </div>
+      <div class="img-catalogo">
+        <img src="{% static 'core/imagenes/escalera-madera.jpg' %}" alt="portada-mamparas-escaleras">
+      </div>
+    </div>
+</section>
+</main>
+{% endblock %}

@@ -1,0 +1,139 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="hero" style= "background-image: url('{% static 'core/imagenes/trabajador-construccion.jpg' %}')">  
+    <div class="fonfo-texto">
+        <h1>Nosotros</h1>
+            <p>Trabajando para darte el mejor servicio</p>
+            <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> 
+            </div>
+    </div>
+</section>
+        <section id="work"class="nosotros-1">
+            <div class="texto-carrusel">
+                <h2 >Trabajos Realizados</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate fugit, laborum suscipit doloribus cupiditate unde. Non nobis ex enim exercitationem.</p>
+            </div>
+            <div class="carruselete">
+                <div class="container-carousel">
+                    <div class="carruseles" id="slider">
+                        <section class="slider-section">
+                            <img src="{% static 'core/imagenes/box-3.jpg' %}">
+                        </section>
+                        <section class="slider-section">
+                            <img src="{% static 'core/imagenes/box-corrediza-2.jpeg' %}">
+                        </section>
+                        <section class="slider-section">
+                            <img src="{% static 'core/imagenes/box-corrediza.jpg' %}">
+                        </section>
+                        <section class="slider-section">
+                            <img src="{% static 'core/imagenes/box.jpg' %}">
+                        </section>
+                        <section class="slider-section">
+                            <img src="{% static 'core/imagenes/colgante.jpg' %}">
+                        </section>
+                        <section class="slider-section">
+                            <img src="{% static 'core/imagenes/colgante-2.jpg' %}">
+                        </section>
+                        <section class="slider-section">
+                            <img src="{% static 'core/imagenes/escalera-2.jpg' %}">
+                        </section>
+                        <section class="slider-section">
+                            <img src="{% static 'core/imagenes/divisores-2.jpg' %}">
+                        </section>
+                        <section class="slider-section">
+                            <img src="{% static 'core/imagenes/divisores-3.jpg' %}">
+                        </section>
+                        <section class="slider-section">
+                            <img src="{% static 'core/imagenes/paños fijos-2.jpeg' %}">
+                        </section>
+                    </div>
+                    <div class="btn-left"><i class="fa-thin fa-angles-left fa-rotate-180"></i></div>
+                    <div class="btn-right"><i class="fa-thin fa-angles-left"></i></div>
+                </div>
+            </div>
+        </section>
+        <section class="banner-nosotros"  style="background-image: url('{% static 'core/imagenes/balcon-barandas-cristal.jpg' %}')">
+        </section>
+        <section class="nosotros-2">
+            <div class="titulo-figuras">
+                <h2 id="servicios">Nuestros Servicios</h2>
+            </div>
+            <div class="conteiner-figuras">
+                <div class="conteiner-img">
+                    <img class="img-1" src="{% static 'core/imagenes/vidrio-terrasa-madera.jpg.crdownload' %}" alt="">
+                </div>
+                <div class="texto-figura">
+                    <h3 id="bal-ter">Balcones y Terrazas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus adipisci asperiores blanditiis corrupti eveniet totam! Neque, exercitationem sunt temporibus obcaecati aut saepe explicabo aliquam autem provident a? Sed, quisquam earum.
+                    </p>
+                </div>
+            </div>
+            <div class="conteiner-figuras">   
+                <div class="texto-figura">
+                    <h3 >Paños Fijos y Corredizos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus adipisci asperiores blanditiis corrupti eveniet totam! Neque, exercitationem sunt temporibus obcaecati aut saepe explicabo aliquam autem provident a? Sed, quisquam earum.
+                    </p>
+                </div>
+                <div class="conteiner-img">
+                    <img class="img-2" src="{% static 'core/imagenes/colgante.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="conteiner-figuras">  
+                <div class="conteiner-img">
+                    <img class="img-1" src="{% static 'core/imagenes/escalera-madera.jpg' %}" alt="">
+                </div>
+                <div class="texto-figura">
+                    <h3>Protección Escaleras</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus adipisci asperiores blanditiis corrupti eveniet totam! Neque, exercitationem sunt temporibus obcaecati aut saepe explicabo aliquam autem provident a? Sed, quisquam earum.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="zona" class="zona">
+            <div class="zona-titulo">
+                <h2>Consultanos por tu zona</h2>
+            </div>
+            <div class="bloque-zona">
+                <div class="zona-items">
+                    <h3>Zona Norte</h3>
+                    <ul>
+                        <li>norte 1</li>
+                        <li>norte 2</li>
+                        <li>norte 3</li>
+                        <li>norte 4</li>
+                    </ul>
+                </div>
+                <div class="zona-items">
+                    <h3>Zona Sur</h3>
+                    <ul>
+                        <li>sur 1</li>
+                        <li>sur 2</li>
+                        <li>sur 3</li>
+                        <li>sur 4</li>
+                    </ul>
+                </div>
+                <div class="zona-items">
+                    <h3>Zona Oeste</h3>
+                    <ul>
+                        <li>oeste 1</li>
+                        <li>oeste 2</li>
+                        <li>oeste 3</li>
+                        <li>oeste 4</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="texto-zona">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut nisi perspiciatis, magni nesciunt a doloribus veniam quidem impedit dolorem, temporibus, amet sunt eum modi eius saepe provident ipsam excepturi suscipit cumque eaque beatae illum fugit ipsum. Enim vitae mollitia quia alias nihil totam ea quam.</span>
+        </section>
+        <script src="{% static 'core/slider.js' %}"></script>
+{% endblock %}

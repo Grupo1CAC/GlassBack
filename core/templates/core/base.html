@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/base.css' %}">
+    <link rel="stylesheet" href="{% static 'core/home.css' %}">
+    <link rel="stylesheet" href="{% static 'core/contacto.css' %}">
+    <link rel="stylesheet" href="{% static 'core/nosotros.css' %}">
+    <link rel="stylesheet" href="{% static 'core/catalogo.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>{% block title %}{% endblock %}FG</title>
+</head>
+<body>
+    <header >
+        <nav class="nav">
+            <img src= "{% static 'core/imagenes/logo.jpg' %}" alt="" class="logo">
+            <ul>
+                <li> <a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'contacto' %}" target="_blank">Contacto</a></li>
+                <li><a href="{% url 'catalogo' %}" target="_blank">Catálogo</a></li>
+                <li><a href="{% url 'nosotros' %}"target="_blank">Nosotros</a></li>
+                <li><a href="{% url 'producto' %}"target="_blank">Usuario</a></li>
+            </ul>        
+        
+        </nav>
+    </header>
+    <main class="main">
+    {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">
+        <div class="conteiner-footer">
+            <div class="footer_link">
+                <div class="link">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="{% url 'contacto' %}" target="_blank">Presupuestos</a></li></li>
+                        <li><a href="{% url 'nosotros' %}" target="_blank">Colocación</a></li></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h3>Mamparas 2</h3>
+                    <ul>
+                        <li><a href="{% url 'catalogo'%}" target="_blank">Baños</a></li>
+                        <li><a href="{% url 'catalogo'%}" target="_blank">Balcones</a></li>
+                        <li><a href="{% url 'catalogo'%}" target="_blank">Escaleras</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h3>Menú 2</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="{% url 'catalogo'%}" target="_blank" >Catálogo</a></li>
+                        <li><a href="{% url 'contacto'%}" target="_blank" >Contacto</a></li>
+                        <li><a href="{% url 'nosotros'%}" target="_blank" >Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="link" >
+                    <h3>Síguenos</h3>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://web.whatsapp.com/%}" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-text">
+                <p>Grupo 1 - Comisiòn 23515</p>
+            </div>
+        </div>  
+    </footer>
+</body>
+</html>

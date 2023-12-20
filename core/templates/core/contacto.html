@@ -1,0 +1,79 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="contacto">
+        <section class="s1">
+            <div class="texto-contacto">
+                <h1 class="tittle">
+                    Fabriccio Glass
+                </h1>
+                <h2 class="p-contacto">
+                    Trabajos a Medida
+                </h2>
+                <div class="button_wathsapp">
+                    <a href="https://web.whatsapp.com/" target="_blank"><input type="submit" value="Llamar"></a>
+                </div>
+            </div>
+            <div class="conteiner">
+                <h3 id="consultas" class="tittle">Formulario de consultas</h3>
+
+                <!--"novalidate" no permite que se envie el form vacio-->
+                <form id="form-validation" novalidate>
+                    <div class="form-items">
+                        <span>Nombre</span>
+                        <input type="text" name="nombre" placeholder="Ingrese su Nombre" required>
+                        <small>Completar</small>
+                    </div>
+                    <div class="form-items">
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                        <small>Completar</small>
+                    </div>
+                    <div class="form-items">
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="Confirme su correo electrónico" required>
+                        <small class="was-validated">Completar</small>
+                    </div>
+                    <div class="form-items">
+                        <span>Teléfono</span>
+                        <input type="number" name="telefono" placeholder="característica - número" required>
+                        <small>Completar</small>
+                    </div>
+                    <div class="form-items">
+                        <span>Mensaje</span>
+                        <textarea name="mensaje" placeholder="Ingres su consulta"></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="s2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26281.143169998286!2d-58.435723662966794!3d-34.57525067600319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59f0e33d4eb%3A0xb4d7c2d0044d32e!2sParque%20Tres%20de%20Febrero!5e0!3m2!1ses-419!2sar!4v1697907484763!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="s3">
+            <div class="conteiner-info">
+                <div class="info-items">
+                    <div class="social"><i class="fa-regular fa-clock"></i></div>
+                    <h3>Horarios de Atención</h3>
+                    <p>Lunes a Sábado</p>
+                    <p>8:00 a 18:00hs</p>
+                </div>
+                <div class="info-items">
+                    <div class="social"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Zonas de trabajo</h3>
+                    <p>Por Aqui y Por alla</p>
+                </div>
+                <div class="info-items">
+                    <div class="social"><i class="fa-regular fa-map"></i></div>
+                    <h3>Dirección</h3>
+                    <p>Medio del lago</p>
+                    <p>Bosques de Palermo</p>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
